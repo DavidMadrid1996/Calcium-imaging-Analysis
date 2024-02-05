@@ -1,0 +1,11 @@
+function  DotPlotting(AverageSlopeR)
+%DOTPLOTTING Summary of this function goes here
+%   Detailed explanation goes here
+c={'r.','b.','k.'}
+P={'dM4','dM2','Ddl'}
+[row colum]=size(AverageSlopeR);
+for ii=1:colum
+plot(AverageSlopeR(:,ii),c{ii},'MarkerSize',12)
+hold on
+end
+
